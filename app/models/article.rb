@@ -18,6 +18,12 @@ class Article < ActiveRecord::Base
   acts_as_taggable
   alias_method :__save, :save
 
+  scope :published, -> { where(published: true) }
+
+  def draft?
+    new_record? || !published?
+  end
+
   def save
     begin
       __save
