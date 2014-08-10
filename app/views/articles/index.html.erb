@@ -24,10 +24,6 @@
 <% end %>
 
 
-<p class="article-new-link-area pull-right">
-  <%= link_to tco('new'), new_article_path %>
-</p>
-
 <% if @articles.length == 0 %>
   <p class="media">
     <div class="media-body">
@@ -42,10 +38,6 @@
 <% end %>
 
 <%= render "article_list", articles: @articles %>
-
-<p class="article-new-link-area pull-right">
-  <%= link_to tco('new'), new_article_path %>
-</p>
 
 <% unless is_index_action %>
   <p>
