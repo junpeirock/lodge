@@ -27,6 +27,10 @@ Rails.application.routes.draw do
   match "articles/feed", :to => 'articles#feed', :via => :get, :as => :articles_feed
 
   resources :articles do
+    collection do
+      get "draft"
+    end
+
     member do
       post "stock"
       post "unstock"

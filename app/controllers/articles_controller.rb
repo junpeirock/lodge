@@ -25,6 +25,15 @@ class ArticlesController < ApplicationController
     render :index
   end
 
+  def draft
+    @articles = Article
+      .draft
+      .includes(:user, :stocks, :tags)
+      .page(params[:page]).per(PER_SIZE)
+      .order(:updated_at => :desc)
+    render :index
+  end
+
   # GET /articles
   # GET /articles.json
   def search
