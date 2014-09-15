@@ -1,0 +1,3 @@
+# mysql
+# in heroku, use CLEARDB_DATABASE_URL
+<% ENV['DATABASE_URL'] = ENV['CLEARDB_DATABASE_URL'].to_s.sub(/\Amysql/){'mysql2'} %>

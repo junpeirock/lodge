@@ -23,9 +23,6 @@
 /log/*.log
 /tmp
 
-/config/database.yml
-
-/Gemfile.lock
 /vendor/bundle
 lodge_development
 lodge_test

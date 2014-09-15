@@ -4,6 +4,8 @@ Lodge
 [![Coverage Status](https://coveralls.io/repos/lodge/lodge/badge.png)](https://coveralls.io/r/lodge/lodge)
 [![Code Climate](https://codeclimate.com/github/lodge/lodge/badges/gpa.svg)](https://codeclimate.com/github/lodge/lodge)
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 =====
 
 ## これは何？

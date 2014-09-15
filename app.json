@@ -1,0 +1,22 @@
+{
+  "addons": [
+    "cleardb",
+    "sendgrid"
+  ],
+  "env" : {
+    "LODGE_DOMAIN"              : "example.com",
+    "SECRET_KEY_BASE"           : "__some_random_string__",
+    "DEVISE_SECRET_KEY"         : "__some_random_string__",
+    "GOOGLE_CLIENT_ID"          : "FILL_THE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET"      : "FILL_THE_CLIENT_SECRET",
+    "DELIVERY_METHOD"           : "smtp",
+    "MAIL_SENDER"               : "lodge@example.com",
+    "SMTP_PORT"                 : "587",
+    "SMTP_AUTH_METHOD"          : "plain",
+    "SMTP_ENABLE_STARTTLS_AUTO" : "true",
+    "LODGE_THEME"               : "lodge"
+  },
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  }
+}
