@@ -1,7 +1,6 @@
 {
   "addons": [
-    "cleardb",
-    "sendgrid"
+    "cleardb"
   ],
   "env" : {
     "LODGE_DOMAIN"              : "example.com",
@@ -11,7 +10,10 @@
     "GOOGLE_CLIENT_SECRET"      : "FILL_THE_CLIENT_SECRET",
     "DELIVERY_METHOD"           : "smtp",
     "MAIL_SENDER"               : "lodge@example.com",
+    "SMTP_ADDRESS"              : "smtp.gmail.com",
     "SMTP_PORT"                 : "587",
+    "SMTP_USERNAME"             : "username",
+    "SMTP_PASSWORD"             : "password",
     "SMTP_AUTH_METHOD"          : "plain",
     "SMTP_ENABLE_STARTTLS_AUTO" : "true",
     "LODGE_THEME"               : "lodge"
