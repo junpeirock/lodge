@@ -93,11 +93,11 @@ Rails.application.configure do
   # SMTPの指定
   config.action_mailer.delivery_method = ENV["DELIVERY_METHOD"].to_sym
   config.action_mailer.smtp_settings = {
-    :address              => 'smtp.sendgrid.net',
+    :address              => ENV["SMTP_ADDRESS"],
     :port                 => ENV["SMTP_PORT"],
     :domain               => ENV["LODGE_DOMAIN"],
-    :user_name            => ENV["SENDGRID_USERNAME"],
-    :password             => ENV["SENDGRID_PASSWORD"],
+    :user_name            => ENV["SMTP_USERNAME"],
+    :password             => ENV["SMTP_PASSWORD"],
     :authentication       => ENV["SMTP_AUTH_METHOD"].to_sym,
     :enable_starttls_auto => ENV["SMTP_ENABLE_STARTTLS_AUTO"],
   }
